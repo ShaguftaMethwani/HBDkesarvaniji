@@ -16,7 +16,7 @@
     <audio id="click-sound" src="audio/click.ogg"></audio>
 
     <img id="city" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg">
-    <img id="city-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
+    <img id="city-thumb" src="Screenshot_2017-04-23-23-50-53-813_com.snapchat.android.png">
     <img id="cubes" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/cubes.jpg">
     <img id="cubes-thumb" src="Abc.png">
     <img id="sechelt" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
@@ -26,7 +26,7 @@
     
     <script id="plane" type="text/html">
    <a-entity class="link"
-      geometry="primitive: plane; height: 4; width: 4"
+      geometry="primitive: plane; height: 2; width: 2"
       material="shader: flat; src: ${thumb}"
       sound="on: click; src: #click-sound"
       event-set__1="_event: mousedown; scale: 1 1 1"
@@ -39,7 +39,7 @@
   
   <a-sky id="image-360" radius="10" src="#city"></a-sky>
    
-   <a-entity id="linkss" layout="layout: line; margin: 1.5" position="-3 -1 -4">
+   <a-entity id="linkss" layout="layout: line; margin: 3" position="-3 -1 -4">
      
 <a-entity template="src: #plane" data-thumb="#city-thumb"></a-entity>
 <a-entity template="src: #plane" data-thumb="#cubes-thumb"></a-entity>
@@ -47,7 +47,7 @@
      
  </a-entity>
    
-   <a-entity id="links" layout="layout: line; margin: 1.5" position="-5 -1 0" rotation="0 90 0">
+   <a-entity id="links" layout="layout: line; margin: 3" position="-5 -1 0" rotation="0 90 0">
      
      <a-entity template="src: #plane" data-thumb="#city-thumb"></a-entity>
 <a-entity template="src: #plane" data-thumb="#cubes-thumb"></a-entity>
